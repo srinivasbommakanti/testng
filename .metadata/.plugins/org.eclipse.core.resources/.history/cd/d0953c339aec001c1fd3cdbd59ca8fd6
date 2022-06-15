@@ -1,0 +1,10 @@
+package testng;
+
+public class Google extends Base_class {
+	
+	public void googletitle() {
+		
+		driver().get("http://www.google.com");
+	}
+
+}

@@ -1,0 +1,24 @@
+package testng;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+
+public class Google extends Base_class {
+
+	WebDriver driver;
+
+	public void googletitle() {
+
+		driver.get("http://www.google.com");
+		String expectedPageTitle = "Google";
+		Assert.assertTrue(driver.getTitle().contains(expectedPageTitle), "Test Failed");
+	}
+
+	public void googleverification() {
+
+		driver.get("http://www.google.com");
+		String expectedPageTitle = "Google";
+		Assert.assertTrue(driver.getTitle().contains(expectedPageTitle), "Test Failed");
+	}
+
+}
